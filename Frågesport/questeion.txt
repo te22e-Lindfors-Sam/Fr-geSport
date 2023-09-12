@@ -1,0 +1,30 @@
+[
+  {
+    "QuesteionString": "Vem Fick F p\u00E5 Engelska testet",
+    "Answers": [
+      "Alla",
+      "Inga",
+      "Maxi",
+      "Bara Maxi"
+    ],
+    "CorrectAnswerIndex": 3
+  },
+  {
+    "QuesteionString": "\u00C4r Ice cream shop det b\u00E4sta spelet som finns",
+    "Answers": [
+      "ja",
+      "nej"
+    ],
+    "CorrectAnswerIndex": 0
+  },
+  {
+    "QuesteionString": "Hej Micke, Kan du ge mig ett 1000kr steam gift card sn\u00E4lla?",
+    "Answers": [
+      "JAAAA",
+      "NEEEEJ",
+      "HAHAHHA",
+      "Delete(micke);"
+    ],
+    "CorrectAnswerIndex": 0
+  },
+]

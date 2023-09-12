@@ -1,0 +1,14 @@
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\bin\Debug\net7.0\Frågesport.exe
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\bin\Debug\net7.0\Frågesport.deps.json
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\bin\Debug\net7.0\Frågesport.runtimeconfig.json
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\bin\Debug\net7.0\Frågesport.dll
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\bin\Debug\net7.0\Frågesport.pdb
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\Frågesport.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\Frågesport.AssemblyInfoInputs.cache
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\Frågesport.AssemblyInfo.cs
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\Frågesport.csproj.CoreCompileInputs.cache
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\Frågesport.dll
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\refint\Frågesport.dll
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\Frågesport.pdb
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\Frågesport.genruntimeconfig.cache
+C:\Users\sam.lindfors\Desktop\Programering\FrågeSport\Frågesport\obj\Debug\net7.0\ref\Frågesport.dll
