@@ -5,17 +5,12 @@ using System.Text.Json;
 
 string resp = "";
 bool quit = false;
-Questeion[] questeions = new Questeion[4];
 string fileName = "questeion.txt";
 List<Questeion> questions;
-// string[] arrayAnswers = new string[4] { "JA", "NEJ", "KANSKE", "HAN KAMPAR NYNÄSHAMN" };
-// Questeion tempQuestion = new Questeion(0, "CAMPAR RATTAN NEO?", arrayAnswers, 0);
-
-
 
 
 while (!quit){
-    Console.WriteLine("Vad vill du göra? Göra mer frågor? (G) Ta Bort Frågor(T) Kör Quized?(K) Sluta(Q)");
+    Console.WriteLine(" WHat do you want to Do (G) Take away some Questions(T) Do the quiz(K) Quit(Q)");
     resp = Console.ReadLine();
     switch (resp.ToUpper()){
         case "G":
@@ -30,7 +25,7 @@ while (!quit){
         case "Q":
             return;
         default :
-            Console.WriteLine("Haha De kan man inte göra TÖNT");
+            Console.WriteLine("YOU CAN DO THAT");
             break;
     }
 
@@ -39,12 +34,14 @@ while (!quit){
 
 void editQuestions()
 {
-    Console.WriteLine("Lägg till en ny fråga, Först vad är frågan");
+    Console.WriteLine("");
+    Console.WriteLine("Add a Questions");
     string questeion = Console.ReadLine();
     int numbOfQuestions = 0;
     bool validAnswer = false;
     while(!validAnswer){
-        Console.WriteLine("Hur många svar finns det? 2-4");
+         Console.WriteLine("");
+        Console.WriteLine("How many answers exist 2-4");
 
         string numbOfAnswersString = Console.ReadLine();
 
@@ -66,14 +63,15 @@ void editQuestions()
 
     string[] answerPossebiltys = new string[numbOfQuestions];
     for (int i = 0;i < numbOfQuestions; i++){
-        Console.WriteLine("Vad är svarsallternativ " + i);
+        Console.WriteLine("");
+        Console.WriteLine("What are the answer optiosn " + i);
         answerPossebiltys[i] = Console.ReadLine();
     }
 
     int correctAnswer = 0;
     validAnswer = false;
     while(!validAnswer){
-        Console.WriteLine("Vilket är rätt svar 0-" + (numbOfQuestions-1));
+        Console.WriteLine("Which is the right answer 0-" + (numbOfQuestions-1));
 
         string correctAnswerIndex = Console.ReadLine();
 
@@ -122,7 +120,8 @@ void writeData(Questeion questeion){
 
 void deleteQuestions(){
     if (File.ReadAllText(fileName).Length == 0){
-        Console.WriteLine("DET FINNS INGA FRÅGOR");
+         Console.WriteLine("");
+        Console.WriteLine("NO QUESTIONS EXISTS");
     }
     else {
         questions = JsonSerializer.Deserialize<List<Questeion>>(File.ReadAllText(fileName));
@@ -130,7 +129,7 @@ void deleteQuestions(){
             Console.WriteLine(i + " " + questions[i].QuesteionString);
         }
         Console.WriteLine("");
-        Console.WriteLine("Skriv det nummer du vill ta bort");
+        Console.WriteLine("Write the number you want to take away");
 
         int value = 0;
         bool validAnswer = false;
@@ -169,7 +168,8 @@ void deleteQuestions(){
 void run(){
     int points = 0;
     if (File.ReadAllText(fileName).Length == 0){
-        Console.WriteLine("DET FINNS INGA FRÅGOR");
+        Console.WriteLine("");
+        Console.WriteLine("NO QUESTIONS EXISTS");
     }
     else {
         questions = JsonSerializer.Deserialize<List<Questeion>>(File.ReadAllText(fileName));
@@ -187,22 +187,22 @@ void run(){
                         validAnswer = true;
                     }
                     else {
-                    Console.WriteLine("Det värder är inte korrkt");
+                    Console.WriteLine("THATS NOT A VALUE");
                     }
                 }
                 else {
-                    Console.WriteLine("Det värder är inte korrkt");
+                    Console.WriteLine("THATS NOT A VALUE");
                 }
             }
             if (currentQuestion.checkForAnswer(guess)){
-                Console.WriteLine("DU HADE RÄTT");
+                Console.WriteLine("CORRECT");
                 points++;
             }
             else {
-                Console.WriteLine("DU HADE FEL");
+                Console.WriteLine("WROOOONONNNGGG");
             }
         }
-        Console.WriteLine("Du hade " + points + " av " + questions.Count);
+        Console.WriteLine("You got " + points + " of " + questions.Count);
         Thread.Sleep(2000);
     }
 }
@@ -223,12 +223,13 @@ public class Questeion
 
     public void askQuestion()
     {
+        Console.WriteLine("");
         Console.WriteLine(QuesteionString);
         for (int i = 0; i < Answers.Length; i++)
         {
             Console.WriteLine("Svar " + i + ": " + Answers[i]);
         }
-        Console.WriteLine("Svara nu med ett av nummrerna från frågorna");
+        Console.WriteLine("Answer with a number");
     }
 
     public bool checkForAnswer(int index)

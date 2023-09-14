@@ -1,30 +1,36 @@
 [
   {
-    "QuesteionString": "Vem Fick F p\u00E5 Engelska testet",
+    "QuesteionString": "Are you ANGRY",
     "Answers": [
-      "Alla",
-      "Inga",
-      "Maxi",
-      "Bara Maxi"
-    ],
-    "CorrectAnswerIndex": 3
-  },
-  {
-    "QuesteionString": "\u00C4r Ice cream shop det b\u00E4sta spelet som finns",
-    "Answers": [
-      "ja",
-      "nej"
+      "YES",
+      "NO"
     ],
     "CorrectAnswerIndex": 0
   },
   {
-    "QuesteionString": "Hej Micke, Kan du ge mig ett 1000kr steam gift card sn\u00E4lla?",
+    "QuesteionString": "WHO ARE YOU ANGRY AT?",
     "Answers": [
-      "JAAAA",
-      "NEEEEJ",
-      "HAHAHHA",
-      "Delete(micke);"
+      "ME???",
+      "UNNITY",
+      "GODOT",
+      "MICKE"
+    ],
+    "CorrectAnswerIndex": 1
+  },
+  {
+    "QuesteionString": "Do you know how to build a botnet?",
+    "Answers": [
+      "yes",
+      "no"
     ],
     "CorrectAnswerIndex": 0
   },
+  {
+    "QuesteionString": "if yes, I will pay you to DODOS untiy",
+    "Answers": [
+      "yes",
+      "no"
+    ],
+    "CorrectAnswerIndex": 0
+  }
 ]
